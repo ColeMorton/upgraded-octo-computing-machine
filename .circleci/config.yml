@@ -20,7 +20,7 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run: yarn install
 
       - save_cache:
           paths:
@@ -28,11 +28,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          command: npm run start
+          command: yarn run start
           background: true
         
       # run tests!
-      - run: npm run test
+      - run: yarn run test
 
       - store_artifacts:
           path: ./errorShots/

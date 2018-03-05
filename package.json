@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "wdio wdio.conf.js",
+    "e2e": "wdio wdio.conf.js",
     "start": "node index.js"
   },
   "author": "",
