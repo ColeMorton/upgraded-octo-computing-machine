@@ -9,6 +9,7 @@
   "scripts": {
     "e2e": "wdio wdio.conf.js",
     "e2e:codecept": "./node_modules/.bin/codeceptjs run --steps",
+    "e2e:codecept:circle": "./node_modules/.bin/codeceptjs run --steps -o '{ \"helpers\": { \"WebDriverIO\": { \"host\": \"hub\", \"port\": 4444}}}'",
     "start": "node index.js"
   },
   "author": "",
