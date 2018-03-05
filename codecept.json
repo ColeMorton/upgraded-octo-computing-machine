@@ -4,7 +4,7 @@
   "output": "./errorShots",
   "helpers": {
     "WebDriverIO": {
-      "url": "http://hub:4444",
+      "url": "http://172.20.0.4:4444",
       "browser": "chrome"
     }
   },
