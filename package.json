@@ -7,9 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "e2e": "wdio wdio.conf.js",
-    "e2e:codecept": "./node_modules/.bin/codeceptjs run --steps",
-    "e2e:codecept:circle": "./node_modules/.bin/codeceptjs run --steps -o '{ \"helpers\": { \"WebDriverIO\": { \"host\": \"hub\", \"port\": 4444}}}'",
+    "e2e": "./node_modules/.bin/codeceptjs run --steps",
+    "e2e:circle": "./node_modules/.bin/codeceptjs run --steps -o '{ \"helpers\": { \"WebDriverIO\": { \"host\": \"hub\", \"port\": 4444}}}'",
     "start": "node index.js"
   },
   "author": "",
@@ -19,9 +18,5 @@
     "serve-static": "^1.13.1",
     "webdriverio": "^4.8.0",
     "codeceptjs": "^1.1.6"
-  },
-  "devDependencies": {
-    "wdio-dot-reporter": "0.0.9",
-    "wdio-mocha-framework": "^0.5.11"
   }
 }
